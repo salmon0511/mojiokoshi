@@ -3,7 +3,7 @@ from io import BytesIO
 
 from flask import Flask, abort, request
 from linebot import LineBotApi, WebhookHandler
-from linebot.exceptions import InvalidSignatureError
+from linebot.exceptions import InvalidSignatureError ,LineBotApiError
 from linebot.models import (ImageMessage, MessageEvent, TextMessage,
                             TextSendMessage)
 
@@ -84,6 +84,7 @@ def reply_message(event, messages):
         event.reply_token,
         messages=messages,
     )
+
 
 
 if __name__ == "__main__":
