@@ -12,5 +12,5 @@ certifi==2018.8.24
 chardet==3.0.4
 idna==2.7
 oauthlib==2.1.0
-urllib3==1.23
+urllib3==1.26.5
 python-dotenv==0.9.1
